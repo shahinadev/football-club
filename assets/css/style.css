@@ -315,8 +315,9 @@ footer p {
     width: 100%;
   }
   .hero-left-content .hero-title {
-    font-size: 36;
+    font-size: 36px;
     line-height: normal;
+    font-weight: 700;
   }
   .players-wrapper {
     width: 100%;
