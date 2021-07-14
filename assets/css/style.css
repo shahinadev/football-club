@@ -63,12 +63,10 @@ a {
   align-items: center;
 }
 /* header styles start */
+
 header {
   width: 100%;
   background-color: #2d25a0;
-}
-.hero:hover .hero-right-content img {
-  transform: rotate(360deg);
 }
 .hero {
   justify-content: space-around;
@@ -79,6 +77,7 @@ header {
 }
 .hero-left-content .btn {
   display: inline-flex;
+  transition: 0.3s ease;
 }
 .hero-left-content .btn i {
   margin-left: 10px;
@@ -89,9 +88,8 @@ header {
 .hero-right-content {
   width: 566.66px;
 }
-.hero-right-content img {
-  transition: 0.6s ease;
-  transform-origin: center;
+.hero-left-content .btn:hover {
+  background-color: #3dbafd;
 }
 
 /* header styles end */
@@ -237,17 +235,21 @@ header {
   font-size: 20px;
   justify-content: center;
 }
+footer p {
+  margin: 30px 0 0 0;
+}
 /* footer styles end */
 
 /* Responsive styles start */
 
 /* Tap */
-@media only screen and (min-width: 668px) and (max-width: 992px) {
+@media only screen and (min-width: 668px) and (max-width: 776px) {
   .container {
     width: 100%;
     margin-bottom: 60px;
     padding: 0 20px;
   }
+
   .players-wrapper {
     width: 90%;
     grid-template-columns: repeat(2, 1fr);
@@ -268,8 +270,8 @@ header {
     width: 100%;
   }
   .hero-left-content h1 {
-    color: #fff;
     font-size: 40px;
+    line-height: normal;
   }
   .hero-left-content {
     width: 50%;
@@ -288,15 +290,14 @@ header {
 
 /* 
   ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
 */
 
-@media (min-width: 320px) and (max-width: 480px) {
-  /* CSS */
+@media screen and (max-width: 600px) {
   .container {
     width: 100%;
     padding: 0 15px;
   }
+
   .hero {
     flex-direction: column;
   }
@@ -315,6 +316,9 @@ header {
   .players-wrapper .player {
     width: 100%;
     height: max-content;
+  }
+  .hero-right-content {
+    width: 100%;
   }
   .highlight-wrapper {
     flex-direction: column;
@@ -355,6 +359,9 @@ header {
   .highlight-content .highlight-heading {
     font-size: 25px;
     margin: 16px 0;
+  }
+  .partnership {
+    margin: 20px 0;
   }
 }
 /* Responsive styles end */
