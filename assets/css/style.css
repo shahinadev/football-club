@@ -315,7 +315,7 @@ footer p {
     width: 100%;
   }
   .hero-left-content .hero-title {
-    font-size: 30px;
+    font-size: 36;
     line-height: normal;
   }
   .players-wrapper {
@@ -338,6 +338,7 @@ footer p {
   .highlight-heading {
     font-size: 30px;
     line-height: normal;
+    font-weight: 700;
   }
   .highlight-banner {
     width: 100%;
